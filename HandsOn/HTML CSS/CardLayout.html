@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .card h3 {
+            margin-top: 10px;
+            color: #2c3e50;
+        }
+        .card p {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <img src="https://www.w3schools.com/w3images/lights.jpg" alt="Sample Image" class="styled-image">
+            <h3>Harry Potter and the Sorcerer's Stone</h3>
+            <p>The first book in the Harry Potter series.</p>
+        </div>
+        <div class="card">
+            <img src="https://www.w3schools.com/w3images/lights.jpg" alt="Sample Image" class="styled-image">
+            <h3>Harry Potter and the Chamber of Secrets</h3>
+            <p>The second book in the Harry Potter series.</p>
+        </div>
+        <div class="card">
+            <img src="https://www.w3schools.com/w3images/lights.jpg" alt="Sample Image" class="styled-image">
+            <h3>Harry Potter and the Prisoner of Azkaban</h3>
+            <p>The third book in the Harry Potter series.</p>
+        </div>
+    </div>
+</body>
+</html>

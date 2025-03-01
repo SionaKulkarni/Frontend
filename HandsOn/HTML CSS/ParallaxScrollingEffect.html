@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        .parallax {
+            background-image: url("https://www.w3schools.com/w3images/lights.jpg");
+            height: 100vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .content {
+            padding: 50px;
+            text-align: center;
+            background: #f4f4f4;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="parallax">Welcome to Parallax Effect</div>
+    <div class="content">
+        <p>Scroll down to see the effect in action.</p>
+        <p>Parallax scrolling makes the background move slower than the foreground content.</p>
+    </div>
+    <div class="parallax" style="background-image: url('https://www.w3schools.com/w3images/lights.jpg');">
+        Another Parallax Section
+    </div>
+    <div class="content">
+        <p>This is another content section with more text.</p>
+    </div>
+</body>
+</html>
