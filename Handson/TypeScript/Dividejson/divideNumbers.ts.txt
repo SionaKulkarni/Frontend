@@ -1,0 +1,29 @@
+// divideNumbers.ts
+function divideNumbers(numerator: number, denominator: number): number {
+  if (denominator === 0) {
+    throw new Error("Cannot divide by zero");
+  }
+  return numerator / denominator;
+}
+
+// Example usage:
+try {
+  const result1 = divideNumbers(10, 2);
+  console.log("Result 1:", result1);
+
+  const result2 = divideNumbers(5, 0); // This will throw an error
+  console.log("Result 2:", result2); // This line will not be reached
+} catch (error) {
+  if (error instanceof Error) {
+    console.error("Error:", error.message);
+  } else {
+    console.error("An unknown error occurred");
+  }
+}
+
+try {
+  const result3 = divideNumbers(10, 3);
+  console.log("Result 3:", result3);
+} catch (error) {
+  console.error("Error:", (error as Error).message);
+}
